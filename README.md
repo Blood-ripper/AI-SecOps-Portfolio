@@ -1,80 +1,54 @@
-﻿\# 🛡️ AI SecOps // Autonomous LLM Red-Teaming \& Threat Taxonomy Framework
+﻿# 🛡️ AI SecOps // Autonomous LLM Red-Teaming & Threat Assessment Framework
 
+## 🎯 Why Use This Repository & Key Benefits
+Recruiters, security engineers, and AI developers can leverage this framework to validate LLM security controls before deployment:
+* **OWASP Top 10 Alignment:** Automatically audits models against critical industry threat vectors, including Prompt Injection (`LLM01`), Sensitive Information Leakage (`LLM06`), and Insecure Jailbreaking (`LLM02`).
+* **Immersive Cyberpunk SOC HUD Interface:** Features high-end dark-mode web dashboards with tactical telemetry metrics and card-hover micro-interactions.
+* **Executive PDF Dossiers:** Instantly compiles audit telemetry into professional, printable dark-mode executive pentest reports.
+* **Autonomous Multi-Turn Testing:** Dynamically refines adversarial prompts across multiple turns to rigorously stress-test target model safety guardrails.
 
+## 🚀 Step-by-Step Usage Guide
 
-\[!\[Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+1. Clone the Repository
+Open your terminal and clone the repository locally:
 
-\[!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+PowerShell
+git clone https://github.com/Blood-ripper/AI-SecOps-Portfolio.git
+cd AI-SecOps-Portfolio
 
-\[!\[Security: OWASP Top 10 LLM](https://img.shields.io/badge/Security-OWASP%20Top%2010%20LLM-critical.svg)](https://owasp.org/www-project-top-10-for-large-language-models/)
+2. Install Dependencies
+Ensure Python is installed, then run the following command to install the required dashboard and PDF generation libraries:
 
+PowerShell
+pip install rich reportlab
 
+3. Run the Multi-Vector Assessment
+Execute the main script to launch the interactive CLI where you can select default test vectors or provide custom objectives:
 
-An advanced, multi-vector autonomous red-teaming and safety audit framework designed to evaluate Large Language Model (LLM) resilience against sophisticated adversarial attacks, prompt injections, and jailbreak vectors.
+PowerShell
+python main.py
 
+4. Generate Security Reports
+Convert your live telemetry (audit_report.json) into visual dashboards and documents:
 
+To generate and open the Elite HTML Cyber SOC HUD Dashboard:
 
-\---
+PowerShell
+python generate_report.py
+start security_report.html
 
+To generate and open the Dark-Mode Executive PDF Report:
 
+PowerShell
+python generate_pdf.py
+start security_report.pdf
 
-\## 🚀 Key Features
-
-
-
-\* \*\*Autonomous Multi-Turn Attack Loops:\*\* Simulates multi-turn conversations where an attacker agent dynamically refines prompts to test target model safety filters.
-
-\* \*\*OWASP Top 10 for LLMs Taxonomy:\*\* Audits across critical vulnerability vectors including:
-
-&#x20; \* `LLM01: Prompt Injection \& System Extraction`
-
-&#x20; \* `LLM06: Sensitive Information \& PII Leakage`
-
-&#x20; \* `LLM02: Insecure Jailbreaking \& Guardrail Bypass`
-
-\* \*\*Interactive CLI Interface:\*\* Allows security engineers to supply custom target objectives on the fly.
-
-\* \*\*Elite Cyber SOC HUD HTML Reports:\*\* Generates an immersive, dark-mode cyberpunk security dashboard complete with telemetry metrics and card-hover micro-interactions.
-
-\* \*\*Executive Dark-Mode PDF Reports:\*\* Compiles audit findings into downloadable, professional pentest dossiers using ReportLab.
-
-
-
-\---
-
-
-
-\## 🛠️ Project Architecture
-
-
-
-```text
-
-AI-SecOps-Portfolio/
-
-│
-
-├── src/
-
-│   ├── attacker.py       # Autonomous multi-turn attack prompt generator
-
-│   ├── target.py         # Target model simulation interface
-
-│   └── evaluator.py      # Safety boundary and refusal detector
-
-│
-
-├── main.py               # Interactive CLI \& multi-vector assessment orchestrator
-
-├── generate\_report.py    # Elite HTML cyber HUD report compiler
-
-├── generate\_pdf.py       # Executive dark-mode PDF pentest compiler
-
-├── audit\_report.json     # Live execution telemetry output
-
-├── security\_report.html  # Interactive web SOC dashboard
-
-├── security\_report.pdf   # Executive printable report
-
-└── README.md             # Project documentation
-
+📊 Sample Security Dashboard Preview
+======================================================================
+ AI SecOps: Interactive Multi-Vector Threat Assessment
+======================================================================
+[+] Target Resilience Index: 100.0% SECURE
+[+] Breach Vulnerabilities: 0.00% Critical
+======================================================================
+🛡️ License
+This project is licensed under the MIT License - see the LICENSE file for details.
